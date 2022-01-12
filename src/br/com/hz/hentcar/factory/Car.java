@@ -1,15 +1,15 @@
-package br.com.hz.hentcar;
+package br.com.hz.hentcar.factory;
 
 public abstract class Car {
 
-    private String power;
-    private boolean arCondicionado;
-    private String nivelCombustivel;
-    private String categoria;
-    private String color;
-    private String lugares;
-    private boolean blindado;
-    private String condicao;
+    public String power;
+    public boolean arCondicionado;
+    public String nivelCombustivel;
+    public String categoria;
+    public String color;
+    public String lugares;
+    public boolean blindado;
+    public String condicao;
 
     public Car(String power, boolean arCondicionado, String nivelCombustivel ,String categoria, String color, String lugares, boolean blindado, String condicao) {
         this.power = power;

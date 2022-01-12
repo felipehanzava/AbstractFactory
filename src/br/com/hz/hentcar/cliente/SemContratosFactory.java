@@ -1,13 +1,11 @@
-package br.com.hz.hentcar.factory;
+package br.com.hz.hentcar.cliente;
 
-import br.com.hz.hentcar.Car;
-import br.com.hz.hentcar.carros.KicksCar;
-import br.com.hz.hentcar.carros.PrismaCar;
-import br.com.hz.hentcar.carros.UnoCar;
+import br.com.hz.hentcar.carros.*;
+import br.com.hz.hentcar.factory.Car;
 
 public class SemContratosFactory extends Factory {
     @Override
-    Car recuperarCarro(String categoriaCarro) {
+    public Car recuperarCarro(String categoriaCarro) {
         switch (categoriaCarro){
             case "A":
                 return new UnoCar("1.0",false,"Full",
@@ -22,9 +20,12 @@ public class SemContratosFactory extends Factory {
                 return new KicksCar("1.6 FAST",true,"Full",
                         "SUV","Preto","5", false, "Perfeita"  );
             default:
-                System.out.println("Não existe essa catergoria");
+                System.out.println("Não existe essa catergoria, será selecionado uma categoria padrão");
+                System.out.println("-------------------------------");
+                System.out.println("Padrão");
+                return new Padrão("1.0 ",false,"Full",
+                        "Compacto","Cinza","4", false, "Ótima");
         }
 
-        return null;
     }
 }

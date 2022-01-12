@@ -1,14 +1,14 @@
-package br.com.hz.hentcar;
+package br.com.hz.hentcar.factory;
 
-import br.com.hz.hentcar.factory.ContratosFactory;
-import br.com.hz.hentcar.factory.Factory;
-import br.com.hz.hentcar.factory.SemContratosFactory;
+import br.com.hz.hentcar.cliente.ContratosFactory;
+import br.com.hz.hentcar.cliente.Factory;
+import br.com.hz.hentcar.cliente.SemContratosFactory;
 
 public class Demo {
 
     public static void main(String[] args){
 
-        Customer cliente= new Customer("e",false);
+        Customer cliente= new Customer("A",true);
         Factory factory = getFactory(cliente);
         factory.create(cliente.getCategoriaCarro());
     }

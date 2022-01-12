@@ -1,6 +1,6 @@
-package br.com.hz.hentcar.factory;
+package br.com.hz.hentcar.cliente;
 
-import br.com.hz.hentcar.Car;
+import br.com.hz.hentcar.factory.Car;
 
 public abstract class Factory {
 
@@ -19,5 +19,5 @@ public abstract class Factory {
         return car;
     }
 
-    abstract Car recuperarCarro(String categoriaCarro);
+    public abstract Car recuperarCarro(String categoriaCarro);
 }

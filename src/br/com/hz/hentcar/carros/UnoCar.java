@@ -1,6 +1,6 @@
 package br.com.hz.hentcar.carros;
 
-import br.com.hz.hentcar.Car;
+import br.com.hz.hentcar.factory.Car;
 
 public class UnoCar extends Car {
 

@@ -1,4 +1,4 @@
-package br.com.hz.hentcar;
+package br.com.hz.hentcar.factory;
 
 public class Customer {
 
